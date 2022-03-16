@@ -1,0 +1,154 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+ 
+:root{
+	
+	--theme-color: 22, 110, 182;
+}
+html,
+body{
+    direction: rtl;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+}
+h1, h2 ,h3 ,h4 ,h5, h6{
+    font-family: 'Almarai', sans-serif;
+    font-weight: 800;
+} 
+form.disabled{ 
+    pointer-events: none;
+    opacity: .6;
+}
+.filepond--root {
+	width: 200px;
+	margin: 0 auto;
+    font-family: "regular";
+}
+.filepond--credits{
+    display: none;
+}
+#main{
+    padding: 0;
+}
+
+.choices[data-type*=select-one]:after {
+    right: auto;
+    left: 11.5px;
+}
+.choices[data-type*=select-multiple] .choices__button, .choices[data-type*=text] .choices__button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-right: 8px;
+    padding-right: 16px;
+    border-right: 1px solid #008fa1;
+}
+
+
+.badge-info{
+    background-color: rgb(67, 94, 190, .2);
+    color: rgb(67, 94, 190, 1);
+} 
+
+body.dragging, body.dragging * {
+    cursor: move !important;
+  }
+  
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+ol.example li   .placeholder {
+position: relative;
+/** More li styles **/
+}
+ol.example li.placeholder:before {
+position: absolute;
+/** Define arrowhead **/
+}
+
+
+.sidebar-link{
+    display: flex !important;
+    align-items: center !important;
+}
+
+.sidebar-link i{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 0;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 8px;
+	text-align: center;
+	background-color: rgb(var(--theme-color), .1);
+	color: rgb(var(--theme-color)) !important;
+}
+.sidebar-wrapper .menu .sidebar-item.active .sidebar-link{
+	background-color: rgb(var(--theme-color)); 
+}
+.sidebar-wrapper .menu .sidebar-item.active .sidebar-link i{
+	color : #fff !important; 
+}
+
+.sidebar-wrapper .sidebar-header img {
+    height: 90px;
+    margin: auto;
+}
+
+.form label{
+	margin-bottom: .5rem;
+}
+.form .form-control{
+    min-height: 50px;
+	margin-bottom: 1rem;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+
+/*
+    sortable
+*/
+.connected-sortable {
+    margin: 0 auto;
+    list-style: none;
+    width: 100%;
+  }
+  li.draggable-item {
+    width: inherit;
+    padding: 15px 20px;
+    background-color: #f5f5f5;
+    -webkit-transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+    -webkit-transition: box-shadow 0.25s ease-in-out;
+    -moz-transition: box-shadow 0.25s ease-in-out;
+    -o-transition: box-shadow 0.25s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out;
+  }
+  li.draggable-item:hover {
+    cursor: pointer;
+    background-color: #eaeaea;
+  }
+  /* styles during drag */
+  li.draggable-item.ui-sortable-helper {
+    background-color: #e5e5e5;
+    -webkit-box-shadow: 0 0 8px rgba(53, 41, 41, 0.8);
+    -moz-box-shadow: 0 0 8px rgba(53, 41, 41, 0.8);
+    box-shadow: 0 0 8px rgba(53, 41, 41, 0.8);
+    transform: scale(1.015);
+    z-index: 100;
+  }
+  li.draggable-item.ui-sortable-placeholder {
+    background-color: #ddd;
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+  }
